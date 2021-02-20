@@ -1,0 +1,1241 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+    height:100%;
+}
+
+body {
+	background-color: #fdfdfd;
+}
+
+.product-categories {
+	margin: 2%;
+}
+
+.product-thumbnail {
+	width: 80px;
+	height: 80px;
+	margin: 2% 2% 5% 0;
+}
+
+.product-showcase {
+	width: 1000px;
+	height: 600px;
+}
+
+.next-button {
+	margin-top: 3%;
+	margin-left: 3%;
+	width: 30%;
+	height: 40px;
+	color: white;
+	background-color: #F85700;
+	border: none;
+	box-shadow: none !important;
+	float: right;
+}
+
+.next-button:hover,
+.next-button:active,
+.next-button:visited {
+	box-shadow: none !important;
+	background-color: #F85700 !important;
+	color: white;
+	opacity: 0.9;
+}
+
+
+.purchase-flow {
+	margin-bottom: 5%;
+	margin-top: 0%;
+	text-align: center;
+}
+
+.purchase-flow-other {
+	margin-bottom: 5%;
+	margin-top: 7%;
+	text-align: center;
+}
+
+#date-form {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 7%;
+}
+
+#service-form, #request-form, #summary-form {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 7%;
+	display: none;
+}
+
+#right-rails {
+	width: 13%;
+	margin-top: 5%;
+}
+
+#right-rails-segment {
+	background-color: #fafafa;
+	display: none;
+}
+
+.view-cart-button {
+	width: 100%;
+	margin-bottom: 5%;
+	box-shadow: none !important;
+	color: black;
+	background-color: #eaeaea;
+}
+
+.view-cart-button:hover {
+	width: 100%;
+	margin-bottom: 5%;
+	box-shadow: none !important;
+	color: black;
+	background-color: #eaeaea;
+	opacity: 0.9;
+}
+
+.checkout-button {
+	width: 100%;
+	box-shadow: none !important;
+	background-color: #F85700;
+	color: white;
+}
+
+.checkout-button:hover {
+	width: 100%;
+	box-shadow: none !important;
+	background-color: #F85700;
+	color: white;
+	opacity: 0.9;
+}
+
+.summary-title {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.modal-message{
+	text-align: center;
+}
+
+.modal-container {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+}
+
+.okay-button-modal {
+	position: absolute;
+	left: 44%;
+}
+
+.form-title {
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.sign-up-container, .log-in-container {
+    border:1px solid grey;
+    min-height: 50vh;
+}
+
+.vertical-center {
+    min-height: 100%;
+    display:flex;
+    align-items: center;
+}
+.signup-image img {
+    width:100%;
+    vertical-align: top;
+}
+.login-image img {
+    width:100%;
+    min-height:450px;
+    vertical-align: top;
+}
+.reset-password-image img {
+    width:100%;
+    vertical-align: top;
+}
+.forgot-password-image img {
+    width:100%;
+    vertical-align: top;
+}
+.signup-image, .login-image,.forgot-password-image, .reset-password-image {
+    padding:0;       
+}
+.existing-member {
+    float:right;
+}
+.signup-form .form-group, .login-form .form-group, .reset-password-form-inner .form-group, .forgot-password-form .form-group, .add-staff-form .form-group {
+    margin: 7% 0 7% 0;
+}
+
+.forgot-password-form, .reset-password-form {
+    border:1px solid grey;
+}
+
+.add-staff-container {
+    padding-top:10%;
+}
+
+.add-staff-content {
+    margin: 0 auto;
+}
+.add-staff-popup {
+    background-color: rgba(0,0,0,0.5);
+    display:none;
+    z-index:10;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+}
+
+.vertical-center.add-staff-popup {
+    position:fixed;
+    height: 100%;
+}
+
+.add-staff-popup-active {
+    display:flex;
+    z-index:10;
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+}
+.add-staff-form {
+    background-color:white;
+    border:1px solid grey;
+    margin: 0 auto;
+}
+
+#close_new_staff_button {
+    float:right;
+    border:1px solid black;
+    background-color: red;
+    color:white;
+    margin-top:5px;
+    width:30px;
+    height:30px;
+    border: none;
+}
+
+.login-form .form-group:nth-child(2) {
+    margin:0;
+}
+
+.signup-form .form-control, .login-form .form-control, .reset-password-form-inner .form-control, .forgot-password-form .form-control,  .add-staff-form .form-control {
+    border:none;
+    border-bottom: 1px solid grey;
+}
+.signup-form .input-group-addon, .login-form .input-group-addon, .reset-password-form-inner .input-group-addon, .forgot-password-form .input-group-addon,  .add-staff-form .input-group-addon{
+    border:none;
+    border:1px solid grey;
+}
+.signup-form i::before, .login-form i::before, .reset-password-form i::before, .forgot-password-form i::before, .add-staff-form i::before {
+     margin:0;
+}
+.signup-form label, .login-form label, .reset-password-form label, .forgot-password-form label, .add-staff-form label{
+    background-color:white;
+}
+.signup-form .form-control, .signup-form label, .login-form .form-control, .forgot-password-form .form-control, .forgot-password-form label, .reset-password-form .form-control, .reset-password-form label,  .add-staff-form .form-control, .add-staff-form label {
+    border-radius: 0;
+}
+.signup-form .form-control, .login-form .form-control, .forgot-password-form .form-control, .reset-password-form .form-control, .add-staff-form .form-control     {
+    box-shadow: none;
+}
+.signup-form input:focus, .login-form input:focus, .forgot-password-form input:focus, .reset-password-form input:focus, .add-staff-form input:focus  {
+    border-bottom:1px solid black;
+}
+input:focus::-webkit-input-placeholder {
+    color:black;
+}
+#signup, #login, #resetpassword, #forgotpassword, #addstaff{
+    width:30%;
+    padding:2%;
+}
+.social-media-signup-container .fa, .social-media-login-container .fa {
+    padding:10px;
+    font-size: 20px;
+    width:30%;
+    text-align:center;
+    text-decoration: none;
+    margin: 2px 2px;
+}
+.social-media-signup-container .fa:hover, .social-media-login-container .fa:hover  {
+    opacity: 0.7;
+}
+.social-media-signup-container .fa-facebook, .social-media-login-container .fa-facebook {
+    background: #3B5998;
+    color:white;
+}
+.social-media-signup-container .fa-google, .social-media-login-container .fa-google {
+    background: #dd4b39;
+    color: white;
+}
+.social-media-signup-container .fa-twitter, .social-media-login-container .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.social-media-signup-container .fa-facebook:hover, .social-media-login-container .fa-facebook:hover {
+    background: white;
+    color:#3B5998;
+    box-shadow: 1px 1px 1px 1px #3B5998;
+}
+.social-media-signup-container .fa-google:hover, .social-media-login-container .fa-google:hover {
+    background: white;
+    color:#dd4b39;
+    box-shadow: 1px 1px 1px 1px #dd4b39;
+}
+.social-media-signup-container .fa-twitter:hover, .social-media-login-container .fa-twitter:hover {
+    background: white;
+    color:#55ACEE;
+    box-shadow: 1px 1px 1px 1px #55ACEE;
+}
+.social-media-signup-container, .social-media-login-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+.signup-instruction, .login-instruction, .reset-password-instruction, .forgot-password-instruction {
+    font-size: 12px;
+    color:grey;
+    text-align: center;
+
+}
+.or-separator {
+    font-size: 10px;
+    margin-top: 7%;
+}
+.or-separator-line {
+    width:100%;
+    text-align: center;
+    border-bottom:1px solid grey;
+    line-height:0.1em;
+}
+.or-separator-line-text {
+    font-size: 15px;
+    background: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    color:grey;
+}
+#login-error {
+    text-align: center;
+    color:red;
+    visibility: hidden;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  z-index: 9;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width:100%;
+  padding: 10px;
+  background-color: #e0b920;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the add/close button */
+.form-container .btn {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 49.8%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+/* Set image size for each product */
+.product-c img{
+    width:100%;
+}
+
+.product-c #anp, .product-c input, .product-c select {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.product-c button{
+    width: 4%;
+    border: none;
+    padding:0;
+}
+
+.product-c .btn{
+  width:8%;
+}
+
+.product-c{
+    font-size:1.5rem;
+    font-family:georgia;
+}
+
+#anp{
+    margin-left:2%;
+}
+
+/* Index style */
+.main-container{
+    background-color:black;
+    height:100vh;
+}
+
+.product-container{
+    height:80vh;
+    text-align: center;
+}
+
+.product-container .logo li img{
+    width:10%;
+}
+
+.product-container .logo li{
+    list-style-type:none;
+    display: inline;
+    margin: 0 6% 0 6%;
+}
+
+.product-container .product li img{
+    width:15%;
+    margin: 0 4% 0 3%;
+}
+
+.product-container .product li{
+    display: inline;
+}
+
+.columnLeft{
+    width:50%; 
+    float:left;
+}
+
+.columnRight{
+    width:50%;
+    float:right;
+}
+
+.columnLeft img, .columnRight img{
+    object-fit: cover;
+    float: left;
+    width: 100%;
+    height:100%;  
+}
+
+.main-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+
+  #indexTitle{
+      font-size:4rem;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 3px rgba(229, 202, 0);
+  }
+}
+
+@keyframes shadow-pulse-big
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 70px rgba(0, 0, 0, 0);
+  }
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url(fonts/Vogue.ttf);
+}
+
+@font-face{
+    font-family: "CustomFont2";
+    src: url(fonts/MonicasSalonShadowNF.ttf);
+}
+
+
+#indexTitle{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 8rem;
+    white-space: nowrap;
+    color:white;
+    z-index: 1;
+    font-family:"Abrail Fatface";
+    font-weight: bold;
+    color:#e5ca00;
+    text-shadow: black 0 -3.5px;
+}
+
+.vertical-center .container {
+    min-height:100%;
+}
+
+.vertical-center.signup-vertical-center, .vertical-center.login-vertical-center {
+    min-height:80vh;
+}
+
+
+.indexTitle{
+    position:absolute;
+    margin-top:100px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 8rem;
+    white-space: nowrap;
+    color:white;
+    z-index: 1;
+    font-family:"Abrail Fatface";
+    font-weight: bold;
+    color:#e5ca00;
+    text-shadow: black 0 -3.5px;
+}
+.indexSubtitle {
+    position:absolute;
+    margin-top:150px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 1em;
+    color:White;
+    font-weight: 1000;
+    z-index: 1;
+    font-family: Georgia;
+    letter-spacing: 3px;
+}
+
+#indexSubtitle{
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 1em;
+    color:White;
+    font-weight: 1000;
+    z-index: 1;
+    font-family: Georgia;
+    letter-spacing: 3px;
+}
+
+#book-btn{
+    font-family: 'Oswald', sans-serif; 
+    letter-spacing: 1px;
+    padding:1% 5% 1% 5%;
+    position:absolute;
+    background-color:transparent;
+    border-color:transparent;
+    border-width: thin;
+    font-weight:thin;
+    color:white;
+    top:65%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation: shadow-pulse 2s infinite;
+    border-radius:0;
+    text-transform: uppercase;
+}
+
+#book-btn:hover{
+    background-color:#e5ca00;
+    border-width:3px;
+    border-color:black;
+    animation:none;
+    color:black;
+    font-weight:400;
+}
+
+#product-btn{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    margin:3% 0 3% 0;
+    padding:1% 5% 1% 5%;
+    background-color:transparent;
+    font-weight:thin;
+    color:black;
+    border:3px solid black;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#appointment-btn{
+    margin-right:5%;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    margin-top:5%;
+    padding:1% 5% 1% 5%;
+    background-color:transparent;
+    font-weight:thin;
+    color:black;
+    border:3px solid black;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#appointment-btn:hover{
+    background-color:#e5ca00;
+}
+
+#product-btn:hover{
+    background-color:#e5ca00;
+}
+
+.appointment-container nav ul li{
+    display: inline-block;
+}
+
+#logout-button, #login-button {
+    
+}
+
+#after-login {
+    margin:0 1% 0 1%;
+}
+
+#navigation-bar nav ul li a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif; 
+    font-weight:bold;
+    color:black;
+}
+
+#navigation-bar nav ul li {
+    margin: 0 5% 0 5%;
+}
+
+#navigation-bar nav ul li p a:hover{
+    text-decoration: none;
+    color:#e5ca00;
+}
+#navigation-bar nav ul {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#navigation-bar ul, #navigation-bar ul li p  {
+    padding: 0;
+    margin:0;   
+}
+
+/* Prevent the navigation bar from wrapping */
+ul {
+    white-space: nowrap;
+}
+
+nav{
+    vertical-align: middle; 
+/*    background-image:url(Images/pipes.png);*/
+    text-align: center;
+    position:relative;
+    z-index: 1;
+    background-color:#FAFAFA;
+    position:sticky;
+}
+
+
+.downArrow{
+    position:absolute;
+    top:85%;
+    left:48.8%;
+    transform: translate(-50%,-50%);
+    color:white;
+    z-index: 1;
+}
+
+.bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.main2_column {
+    margin-bottom: 100px;
+}
+.product-container {
+    height:auto;
+}
+.product-container #product-btn {
+    margin-bottom:100px;
+}
+
+.main_column img{
+    width:100%;
+    object-fit:cover;
+}
+
+.appointment-container .row {
+    border-top: 1px solid black;
+}
+
+.main2_column h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size:3rem;
+    padding-right:5%
+}
+
+.main2_column h2{
+    font-family: 'Oswald', sans-serif; 
+    font-size:1.2rem;
+    font-weight: 100;
+    letter-spacing: 5px;
+    padding-right:5%;
+}
+
+.main2_column p{
+    font-family: 'Oswald', sans-serif; 
+    line-height: 200%;
+    padding-right:5%;
+}
+
+.main2_column{
+    text-align: center;
+    padding-top:4%;
+
+}
+
+#navigation-bar nav ul li#logout-button {
+    margin-left:1%;
+}
+
+#booknav-btn, #login-nav-btn, #logout-nav-btn{
+    border-width: 2px;
+    border-color:black;
+    border-style: solid;
+    padding:2px 10px 2px 10px;
+}
+
+
+
+#booknav-btn:hover, #login-nav-btn:hover, #logout-nav-btn:hover{
+    background-color:#e5ca00;
+    color: black;
+}
+
+#booknav-btn a:hover, #login-nav-btn a:hover, #logout-nav-btn a:hover{
+    color:black;
+}
+
+
+#ac2{
+    padding:0;
+    padding-left:2%;
+    padding-top:6%;
+}
+
+#gap{
+    height:10vh;
+}
+
+#navigation-bar span {
+    font-family: 'Helvetica Neue',Arial,Helvetica,sans-serif;
+}
+
+.display-4 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#navigation-bar li a {
+ font-size: 14px;
+}
+
+#navigation-bar ul {
+ font-size: 14px;
+}
+
+.container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    position: relative;
+}
+
+#footer #lastfooter {
+    margin-top:1%;
+}
+
+#firstfooter{
+    height 40vh;
+}
+
+#lastfooter{
+    height:10vh;
+    background-color: black;
+    color:#e5ca00;
+    text-align: center;
+    padding:1.5% 0 1.5% 0;
+    letter-spacing: 5px;
+    text-transform: uppercase; 
+}
+h1.display-4 {
+    margin-top:14px;
+    font-size: 36px;
+}
+h1.appointment-list-title {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+#appointment-details-modal {
+  position: absolute;
+  top: 18%;
+  left: 28%;
+  height: 500px;
+  width: 700px;
+}
+
+p.appointment-details-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+a.view-details-tag {
+  cursor: pointer;
+}
+
+span.appointment-details-content {
+  padding-left: 1%;
+  font-weight: normal;
+}
+
+i#close-app-mark {
+  cursor: pointer;
+}
+
+#itemDesc{
+  width: 20%;
+}
+
+.ttb, .ttb th{
+  text-align:center;
+}
+
+.ttb > tbody > tr > td {
+  vertical-align: middle;
+}
+
+
+.delete-app-modal, .change-status-modal {
+  position: absolute;
+  top: 32%;
+  left: 38%;
+  height: 230px;
+}
+
+span.view-details-text {
+  color: blue;
+}
+
+.product-list-img p{
+  text-align:center;
+  font-family: georgia,sans-serif;
+  font-size: 2rem;
+  margin:5% 0 25% 0;
+}
+
+.product-list-img{
+  text-align: center;
+  font-family: monospace;
+}
+
+.product-list-img .stock{
+  margin-right:30%; 
+}
+
+.archiveItem{
+  margin-left:5%;
+}
+
+.user-inventory-container h1{
+  font-family: georgia,sans-serif;
+  font-size: 5rem;
+  margin:5% 0 5% 0;
+}
+
+#myForm, #archiveList{
+  margin-top:5%;
+  border-left-width:2px;
+  border-left-style:solid;
+  border-left-color:#e5ca00;
+/*  border: 2px dashed #e5ca00;*/
+}
+
+#myForm h1, #archiveList h1{
+  font-family:georgia, sans-serif;
+}
+
+#myForm button, #archiveList .cancel{
+    border-width: 3px;
+    border-color:black;
+    border-radius:0px;
+    border-style: solid;
+    background-color:green;
+    color:black;
+}
+
+#myForm .cancel, #archiveList .cancel{
+   background-color:red;
+}
+
+
+#archiveList{
+  padding: 1% 2% 1% 2%;
+  
+}
+
+#archiveList .cancel{
+  width:50%;
+  padding: 16px 20px;
+ 
+}
+
+#myForm label{
+  font-size: 1.5rem;
+}
+
+#userInput {
+  background-image: url('images/magnifying-glass.png');
+  background-position: 12px 15px;
+  background-repeat: no-repeat; 
+  width: 100%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd;
+  margin-bottom: 12px; 
+}
+
+
+#appointment-loader {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+
+body#appointment-page {
+  overflow-y: hidden;
+}
+
+.editUser{
+  position: none;
+  z-index: 9;
+  width:74.3%;
+  background-color:#e5ca00;
+}
+
+.editUser h1{
+  font-family: georgia;
+}
+
+.user-btn{
+  width:50%;
+  height:7%;
+  color:black;
+  opacity: 0.8;
+}
+
+.user-btn:hover{
+  opacity:1;
+  color:black;
+}
+
+#bannedUserTable{
+  display: none;
+  background-color:white;
+  border:none;
+}
+
+#cancel-app-link {
+  cursor: pointer;
+}
+
+#cancel-app-link:hover {
+  text-decoration: underline;
+}
+
+.change-status-modal {
+  position: absolute;
+  top: 32%;
+  left: 38%;
+  height: 180px;
+}
+
+.zoom{
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(5); 
+}
+
+#archiveTable .product-wctrl{
+  width:10%;
+}
+
+#itemTable .product-wctrl{
+  width:10%;
+}
+
+#gender , #categories{
+  display: none;
+}
+
+
+div.price-summary {
+  margin-top: 4%;
+  float: right;
+  border: 1px solid rgb(236, 236, 236);
+  background-color: rgb(252, 252, 252);
+  padding: 2% 4%;
+}
+
+p.summary-title {
+  font-weight: bold;
+}
+
+
+span#total-price {
+  margin-left: 3%;
+  font-size: 2em;
+}
+
+span.summary-value {
+  text-align: right;
+}
+
+p.sub-content {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+img.cart-img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgb(209, 208, 208);
+}
+
+.cart-product-text {
+  font-size: 1.2rem;
+}
+
+#pay-cart-modal {
+  margin: 0 auto !important;
+  height: 55% !important;
+  position: relative;
+}
+
+p.changes-price {
+  font-size: 1.5rem;
+}
+
+li.hide-li {
+  display: none !important;
+}
+
+li.show-li {
+  display: block !important;
+}
+
+p.remove-text {
+  color: blue;
+  cursor: pointer;
+}
+
+p.remove-text:hover {
+  text-decoration: underline;
+}
+
+.cart-criteria {
+  padding-top: 2.5%;
+}
+
+.dboard{
+  padding: 1% 0 0.5% 0;
+}
+
+.dashboard-container .row .content{
+ 
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px #888888;
+  margin:1.5%;
+}
+
+#dashboard-bg{
+  background-color:whitesmoke;
+}
+
+#navigation-bar {
+    z-index:100;
+    border-bottom:1px solid grey;
+}
+
+/* For sticky navigation bar*/
+.sticky {
+    position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+}
+
+.insight:hover{
+  text-decoration: none;
+  color:black;
+}
+
+.insight{
+  color:black;
+}
+
+.col-zoom{
+  transition: transform .2s; /* Animation */
+}
+
+.col-zoom:hover{
+  transform: scale(1.03);
+}
+
+.result{
+  font-weight:bold;
+  font-style:italic;
+}
+
+.col-c2 ul li a{
+  background-color:transparent;
+  color:black;
+  font-weight: thin;
+}
+
+.col-c2 ul li a:hover{
+  background-color:#e0b920;
+  color:black;
+}
+
+.rr-si{
+  padding-left:2%;
+}
+
+.clickedButton {
+    background-color: #dee2e6;
+}
